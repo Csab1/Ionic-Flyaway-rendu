@@ -21,6 +21,9 @@ import { HomeComponent } from './home/home.component';
 import { VolsComponent } from './vols/vols.component';
 import { AccountComponent } from './account/account.component';
 import { ResearchComponent } from './research/research.component';
+import { FlynumberComponent } from './flynumber/flynumber.component';
+import { AirportsComponent } from './airports/airports.component';
+import { DestinationComponent } from './destination/destination.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +35,10 @@ import { ResearchComponent } from './research/research.component';
       VolsComponent,
       AccountComponent,
       ResearchComponent,
+      FlynumberComponent,
+      AirportsComponent,
+      DestinationComponent,
+
   ],
   entryComponents: [],
   imports: [
