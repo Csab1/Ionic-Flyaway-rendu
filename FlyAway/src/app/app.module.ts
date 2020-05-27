@@ -18,6 +18,9 @@ import {RegisterComponent} from "./register/register.component";
 import {AngularFirestoreModule} from "@angular/fire/firestore";
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
+import { VolsComponent } from './vols/vols.component';
+import { AccountComponent } from './account/account.component';
+import { ResearchComponent } from './research/research.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +29,9 @@ import { HomeComponent } from './home/home.component';
       RegisterComponent,
       LoginComponent,
       HomeComponent,
+      VolsComponent,
+      AccountComponent,
+      ResearchComponent,
   ],
   entryComponents: [],
   imports: [
