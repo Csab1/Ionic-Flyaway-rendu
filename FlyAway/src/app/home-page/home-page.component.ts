@@ -7,7 +7,7 @@ import {AngularFireAuth} from "@angular/fire/auth";
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.scss'],
 })
-export class HomePageComponent implements OnInit
+export class HomePageComponent implements OnInit 
 {
 
   
