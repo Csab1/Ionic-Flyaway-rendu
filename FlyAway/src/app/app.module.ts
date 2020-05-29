@@ -21,6 +21,7 @@ import { ResearchComponent } from './research/research.component';
 import { FlynumberComponent } from './flynumber/flynumber.component';
 import { AirportsComponent } from './airports/airports.component';
 import { DestinationComponent } from './destination/destination.component';
+import { ParamComponent } from './param/param.component';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import { DestinationComponent } from './destination/destination.component';
       FlynumberComponent,
       AirportsComponent,
       DestinationComponent,
+      ParamComponent,
      
 
   ],

@@ -13,6 +13,7 @@ import { AccountComponent } from './account/account.component';
 import { AirportsComponent } from './airports/airports.component';
 import { FlynumberComponent } from './flynumber/flynumber.component';
 import { DestinationComponent } from './destination/destination.component';
+import { ParamComponent } from './param/param.component';
 
 
 
@@ -29,7 +30,7 @@ const routes: Routes = [
   {path : 'airports' , component : AirportsComponent},
   {path : 'flynumber' ,component : FlynumberComponent},
   {path : 'destination',component : DestinationComponent},
-  
+  {path : 'param' ,component: ParamComponent},
 
  
   

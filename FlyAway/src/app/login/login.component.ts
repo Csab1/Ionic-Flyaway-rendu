@@ -15,7 +15,7 @@ export class LoginComponent implements OnInit {
   
     ngOnInit()
     {
-      document.querySelector('ion-footer').style.display = 'none';
+      document.querySelector('ion-tab-bar').style.display = 'none';
       this.afAuth.authState.subscribe(user =>
       {
         if (user)

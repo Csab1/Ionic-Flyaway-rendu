@@ -16,7 +16,7 @@ export class HomePageComponent implements OnInit
 
   ngOnInit()
   {
-    document.querySelector('ion-footer').style.display = 'none';
+    document.querySelector('ion-tab-bar').style.display = 'none';
   }
     login()
     {
