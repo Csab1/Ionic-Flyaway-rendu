@@ -15,7 +15,9 @@ export class HomePageComponent implements OnInit
   constructor(public router: Router, public afAuth: AngularFireAuth) { }
 
   ngOnInit()
-  {}
+  {
+    document.querySelector('ion-footer').style.display = 'none';
+  }
     login()
     {
         this.router.navigateByUrl('login');

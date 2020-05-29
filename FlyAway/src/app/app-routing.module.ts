@@ -14,6 +14,8 @@ import { AirportsComponent } from './airports/airports.component';
 import { FlynumberComponent } from './flynumber/flynumber.component';
 import { DestinationComponent } from './destination/destination.component';
 
+
+
 const routes: Routes = [
   
  
@@ -26,7 +28,11 @@ const routes: Routes = [
   {path : 'account' , component :AccountComponent},
   {path : 'airports' , component : AirportsComponent},
   {path : 'flynumber' ,component : FlynumberComponent},
-  {path : 'destination',component : DestinationComponent}
+  {path : 'destination',component : DestinationComponent},
+  
+
+ 
+  
 
 ];
 
@@ -37,3 +43,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
