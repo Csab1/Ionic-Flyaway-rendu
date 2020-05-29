@@ -10,6 +10,12 @@ import { HomeComponent } from './home/home.component';
 import { ResearchComponent } from './research/research.component';
 import { VolsComponent } from './vols/vols.component';
 import { AccountComponent } from './account/account.component';
+import { AirportsComponent } from './airports/airports.component';
+import { FlynumberComponent } from './flynumber/flynumber.component';
+import { DestinationComponent } from './destination/destination.component';
+import { ParamComponent } from './param/param.component';
+
+
 
 const routes: Routes = [
   
@@ -20,7 +26,15 @@ const routes: Routes = [
   {path : 'home' , component : HomeComponent},
   {path : 'research', component : ResearchComponent},
   {path : 'vols', component : VolsComponent},
-  {path : 'account' , component :AccountComponent}
+  {path : 'account' , component :AccountComponent},
+  {path : 'airports' , component : AirportsComponent},
+  {path : 'flynumber' ,component : FlynumberComponent},
+  {path : 'destination',component : DestinationComponent},
+  {path : 'param' ,component: ParamComponent},
+
+ 
+  
+
 ];
 
 @NgModule({
@@ -30,3 +44,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+

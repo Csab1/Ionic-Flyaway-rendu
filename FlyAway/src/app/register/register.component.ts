@@ -13,7 +13,7 @@ export class RegisterComponent implements OnInit {
 
   constructor(public afAuth : AngularFireAuth, public router: Router) { }
 
-  ngOnInit() {}
+  ngOnInit() {document.querySelector('ion-tab-bar').style.display = 'none';}
 
   register()
   {

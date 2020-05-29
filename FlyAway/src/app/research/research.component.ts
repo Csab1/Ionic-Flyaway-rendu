@@ -11,9 +11,24 @@ export class ResearchComponent implements OnInit {
   constructor(public router: Router, public afAuth: AngularFireAuth) { }
 
   ngOnInit() {}
-  
-  researchflight()
+
+  airports()
   {
-    this.router.navigateByUrl('researchflight');
+      this.router.navigateByUrl('airports');
+   
   }
-}
+
+    flynumber()
+    {
+      this.router.navigateByUrl('flynumber');
+    }
+
+    destination()
+    {
+      this.router.navigateByUrl('destination');
+    }
+
+
+
+  }
+

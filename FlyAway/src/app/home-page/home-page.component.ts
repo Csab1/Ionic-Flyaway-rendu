@@ -7,7 +7,7 @@ import {AngularFireAuth} from "@angular/fire/auth";
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.scss'],
 })
-export class HomePageComponent implements OnInit
+export class HomePageComponent implements OnInit 
 {
 
   
@@ -15,7 +15,9 @@ export class HomePageComponent implements OnInit
   constructor(public router: Router, public afAuth: AngularFireAuth) { }
 
   ngOnInit()
-  {}
+  {
+    document.querySelector('ion-tab-bar').style.display = 'none';
+  }
     login()
     {
         this.router.navigateByUrl('login');
