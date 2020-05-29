@@ -24,6 +24,7 @@ import { DestinationComponent } from './destination/destination.component';
 import { ParamComponent } from './param/param.component';
 
 
+
 @NgModule({
   declarations: [
       AppComponent,
@@ -38,6 +39,8 @@ import { ParamComponent } from './param/param.component';
       AirportsComponent,
       DestinationComponent,
       ParamComponent,
+      
+      
      
 
   ],

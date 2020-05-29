@@ -4,6 +4,8 @@ import {AngularFireAuth} from "@angular/fire/auth";
 
 
 
+
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -11,9 +13,10 @@ import {AngularFireAuth} from "@angular/fire/auth";
 })
 export class HomeComponent implements OnInit {
 
-  constructor(public router: Router, public afAuth: AngularFireAuth,) { }
+  constructor(public router: Router, public afAuth: AngularFireAuth, ) { }
   ngOnInit()
   {
+  
     
     let user = localStorage.getItem('user');
     console.log(user);
@@ -24,7 +27,7 @@ export class HomeComponent implements OnInit {
     
     
   }
-
+  
   
   logOut()
   {
@@ -34,3 +37,6 @@ export class HomeComponent implements OnInit {
     })
   }
 }
+ 
+
+
