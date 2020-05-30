@@ -1,0 +1,140 @@
+.billet {
+  width: 340px;
+  height: 497px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+}
+
+
+
+.type {
+  width: 80px;
+  height: 21.7px;
+  border-style: solid;
+  border-color: black;
+  margin-left: 20px;
+  position: absolute;
+  top : 30px;
+  border-width: 2px;
+  border-radius: 10px;
+  color: black;
+  font-size: 10px;
+  text-align: center;
+  line-height: 21.7px;
+
+}
+
+.travel {
+  width: 120px;
+  display: block;
+  margin-left: 280px;
+  position: absolute;
+  top : 30px;
+}
+
+.destination {
+  color: #191948;
+  font-weight: bold;
+
+
+}
+
+.icon {
+  width: 12px;
+}
+
+.passenger {
+  color: black;
+  position: absolute;
+  top : 140px;
+  font-size: 12px;
+  margin-left: 20px;
+
+}
+
+.adult {
+  font-size: 14px;
+  color: #9d9fa6;
+}
+
+.reference {
+  color: black;
+  position: absolute;
+  top : 240px;
+  font-size: 12px;
+  margin-left: 20px;
+
+}
+
+.category {
+  color: black;
+  position: absolute;
+  top : 340px;
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+
+.date {
+  color: black;
+  position: absolute;
+  top : 140px;
+  font-size: 12px;
+  left : 694px
+}
+
+.gate {
+  color: black;
+  position: absolute;
+  top : 240px;
+  font-size: 12px;
+  left : 694px
+}
+
+.seat {
+  color: black;
+  position: absolute;
+  top : 340px;
+  font-size: 12px;
+  left : 694px
+}
+
+.cut {
+  color: black;
+  position: absolute;
+  top: 400px;
+}
+
+.barcode {
+  width: 15%;
+  top : 425px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+
+}
+
+.ticket_number {
+  color: black;
+  font-size: 11px;
+  top: 475px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.title {
+  font-size: 18px;
+  color: #191948;
+  position: absolute;
+  margin-left: 20px;
+  top : 70px
+
+}

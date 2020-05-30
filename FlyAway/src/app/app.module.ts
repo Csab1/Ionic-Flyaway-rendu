@@ -22,6 +22,7 @@ import { FlynumberComponent } from './flynumber/flynumber.component';
 import { AirportsComponent } from './airports/airports.component';
 import { DestinationComponent } from './destination/destination.component';
 import { ParamComponent } from './param/param.component';
+import { BilletComponent } from './billet/billet.component';
 
 
 
@@ -39,7 +40,7 @@ import { ParamComponent } from './param/param.component';
       AirportsComponent,
       DestinationComponent,
       ParamComponent,
-      
+      BilletComponent,
       
      
 
