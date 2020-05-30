@@ -14,6 +14,7 @@ import { AirportsComponent } from './airports/airports.component';
 import { FlynumberComponent } from './flynumber/flynumber.component';
 import { DestinationComponent } from './destination/destination.component';
 import { ParamComponent } from './param/param.component';
+import { BilletComponent } from './billet/billet.component';
 
 
 
@@ -31,7 +32,7 @@ const routes: Routes = [
   {path : 'flynumber' ,component : FlynumberComponent},
   {path : 'destination',component : DestinationComponent},
   {path : 'param' ,component: ParamComponent},
-
+  {path : 'billet' , component : BilletComponent}
  
   
 
