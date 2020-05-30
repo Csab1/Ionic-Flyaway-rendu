@@ -25,61 +25,10 @@
     </ion-button>
   </div> -->
 
-  <div>
-    <ion-item-group>
-      <ion-item-sliding>
-        <ion-item>
-          <ion-label>
-            <h3>Comptes et cartes bancaires</h3>
-          </ion-label>
-        </ion-item>
-        <ion-item-options>
-          <ion-item-option>
-            Favorite
-          </ion-item-option>
-        </ion-item-options>
-      </ion-item-sliding>
+  <ion-button (click)="click()">Comptes et cartes bancaires</ion-button>
+  <ion-button (click)="click()">Préférences de paiement</ion-button><br />
+  <ion-button (click)="click()">Notifications</ion-button>
+  <ion-button (click)="click()">Infos légales</ion-button><br />
 
-      <ion-item-sliding>
-        <ion-item>
-          <ion-label>
-            <h3>Préférences de paiement</h3>
-          </ion-label>
-        </ion-item>
-        <ion-item-options>
-          <ion-item-option>
-            Favorite
-          </ion-item-option>
-        </ion-item-options>
-      </ion-item-sliding>
-    </ion-item-group>
-
-    <ion-item-group>
-      <ion-item-sliding>
-        <ion-item>
-          <ion-label>
-            <h3>Notifications</h3>
-          </ion-label>
-        </ion-item>
-        <ion-item-options>
-          <ion-item-option>
-            Favorite
-          </ion-item-option>
-        </ion-item-options>
-      </ion-item-sliding>
-
-      <ion-item-sliding>
-        <ion-item>
-          <ion-label>
-            <h3>Infos légales</h3>
-          </ion-label>
-        </ion-item>
-        <ion-item-options>
-          <ion-item-option>
-            Favorite
-          </ion-item-option>
-        </ion-item-options>
-      </ion-item-sliding>
-    </ion-item-group>
-  </div>
+  <ion-button class="deco" (click)="logOut()">logout</ion-button>
 </ion-content>
