@@ -1,9 +1,10 @@
 
 <ion-content>
+  <h1>Connexion</h1>
  <ion-card>
   <ion-card-header>
     <ion-card-subtitle>Connexion</ion-card-subtitle>
-    <ion-card-title>Login</ion-card-title>
+    <ion-card-title>Identifiant</ion-card-title>
   </ion-card-header>
 
   <ion-item>
@@ -16,12 +17,12 @@
     <ion-input type="password" [(ngModel)]="password" ></ion-input>
   </ion-item>
 
-     <ion-button expand="full"  color="warning" (click)="login()">Login</ion-button>
+     <ion-button  expand="full"   (click)="login()">Login</ion-button>
  </ion-card>
 
     <ion-label>
-        <ion-button (click)="toRegister()">
-            Don't have an account ?
+        <ion-button id="create" (click)="toRegister()">
+            Vous n'avez pas de compte ?
         </ion-button>
     </ion-label>
 </ion-content>

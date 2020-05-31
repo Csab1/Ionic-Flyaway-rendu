@@ -24,12 +24,11 @@ export class RegisterComponent implements OnInit ,AfterViewInit {
       alert(err);
     });
   }
-
-    back()
-    {
+  login()
+  {
       this.router.navigateByUrl('login');
-    }
-
+   
+  }
 
 
     ngAfterViewInit(){
