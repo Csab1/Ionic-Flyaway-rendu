@@ -1,5 +1,44 @@
-
 <ion-content>
-  
  
+    <h1>Bienvenue</h1>
+ 
+    <ion-list>
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="./avatar.svg">
+          </ion-avatar>
+          <ion-label>
+            <h3>Jean-Pierre Gilles</h3>
+            <p>20, Rue Lorem Ipsum, XX XXX L****</p>
+            <p>Societe Generale XXX 9345</p>
+          </ion-label>
+        </ion-item>
+    <section class="full-width">
+        <ion-button expand="full" color="light">Voir votre profil</ion-button>
+    </section>
+    </ion-list>
+
+    <h3>Votre prochain vol</h3>
+
+    <div class="flight">
+
+        <div (click)="billet()" class="card1">
+          <div class="airline_logo">
+            <ion-img src="https://i.ya-webdesign.com/images/air-france-logo-png-8.png"></ion-img>
+          </div>
+          <div class="price"><span class="number">Flight No</span> AF645</div>
+          <div class="time">
+            8:00 pm <ion-img  class="logo" src="https://image.flaticon.com/icons/png/512/68/68380.png"></ion-img><span class="land">2:15 pm</span>
+          </div>
+          <div class="duration">
+            <span class="first_part">Duration :</span> 17h15 m <span class="first_part"> | Non - Stop</span>
+          </div>
+        </div>
+    </div>
+    
+    <section class="full-width">
+        <ion-button expand="full" color="light">Voir tous mes vols</ion-button>
+    </section>
+
+      
 </ion-content>
