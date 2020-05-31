@@ -47,7 +47,16 @@ export class HomeComponent implements OnInit,AfterViewInit {
     document.querySelector('ion-tab-bar').style.display = 'visible';
   }
 
+  vols()
+  {
+      this.router.navigateByUrl('vols');
+   
+  }
 
+  profil()
+  {
+    this.router.navigateByUrl('account');
+  }
 }
  
 

@@ -5,16 +5,16 @@
     <ion-list>
         <ion-item>
           <ion-avatar slot="start">
-            <img src="./avatar.svg">
+              <img src="https://static1.purepeople.com/articles/6/37/97/36/@/5482778-exclusif-jean-pierre-pernaut-soiree-624x600-2.jpg"/>
           </ion-avatar>
           <ion-label>
-            <h3>Jean-Pierre Gilles</h3>
+            <h2>Jean-Pierre Gilles</h2>
             <p>20, Rue Lorem Ipsum, XX XXX L****</p>
             <p>Societe Generale XXX 9345</p>
           </ion-label>
         </ion-item>
     <section class="full-width">
-        <ion-button expand="full" color="light">Voir votre profil</ion-button>
+        <ion-button expand="full" color="light" (click)="profil()">Voir votre profil</ion-button>
     </section>
     </ion-list>
 
@@ -37,7 +37,7 @@
     </div>
     
     <section class="full-width">
-        <ion-button expand="full" color="light">Voir tous mes vols</ion-button>
+        <ion-button expand="full" color="light" (click)="vols()">Voir tous mes vols</ion-button>
     </section>
 
       
