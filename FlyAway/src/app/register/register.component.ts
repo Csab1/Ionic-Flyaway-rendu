@@ -10,6 +10,7 @@ import {Router} from "@angular/router";
 export class RegisterComponent implements OnInit ,AfterViewInit {
     email   : string;
   password  : string;
+ 
 
   constructor(public afAuth : AngularFireAuth, public router: Router) { }
 

@@ -11,13 +11,14 @@ import {AngularFireAuth} from "@angular/fire/auth";
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
-export class HomeComponent implements OnInit,AfterViewInit {
 
+export class HomeComponent implements OnInit,AfterViewInit {
+  user:string;
   constructor(public router: Router, public afAuth: AngularFireAuth, ) { }
   ngOnInit()
   {
   
-    
+   
     let user = localStorage.getItem('user');
     console.log(user);
     if (!user)
@@ -35,6 +36,9 @@ export class HomeComponent implements OnInit,AfterViewInit {
       localStorage.clear();
       this.router.navigateByUrl('login');
     })
+    
+
+
   }
 
 
