@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import {Router} from "@angular/router";
 import {AngularFireAuth} from "@angular/fire/auth";
+
+
 
 
 
@@ -9,12 +11,14 @@ import {AngularFireAuth} from "@angular/fire/auth";
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
-export class HomeComponent implements OnInit {
 
-  constructor(public router: Router, public afAuth: AngularFireAuth,) { }
+export class HomeComponent implements OnInit,AfterViewInit {
+  user:string;
+  constructor(public router: Router, public afAuth: AngularFireAuth, ) { }
   ngOnInit()
   {
-    
+  
+   
     let user = localStorage.getItem('user');
     console.log(user);
     if (!user)
@@ -24,7 +28,7 @@ export class HomeComponent implements OnInit {
     
     
   }
-
+  
   
   logOut()
   {
@@ -32,5 +36,19 @@ export class HomeComponent implements OnInit {
       localStorage.clear();
       this.router.navigateByUrl('login');
     })
+    
+
+
   }
+
+
+  ngAfterViewInit(){
+
+    document.querySelector('ion-tab-bar').style.display = 'visible';
+  }
+
+
 }
+ 
+
+

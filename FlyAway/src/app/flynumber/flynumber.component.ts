@@ -13,4 +13,11 @@ export class FlynumberComponent implements OnInit {
 
   ngOnInit() {}
 
+
+  backto()
+  {
+    this.router.navigateByUrl('research');
+  }
 }
+
+

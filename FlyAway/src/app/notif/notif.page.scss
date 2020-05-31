@@ -1,0 +1,21 @@
+ion-toggle {
+  --handle-box-shadow: 0 3px 12px rgba(255, 0, 0, 0.6),
+    0 3px 1px rgba(50, 70, 255, 0.6);
+
+  overflow: visible;
+
+  contain: none;
+}
+
+.titre {
+  display: flex;
+  justify-content: center;
+}
+
+ion-content {
+  --background: url(image/sky.jpg) no-repeat;
+}
+
+h2 {
+  padding-bottom: 150px;
+}

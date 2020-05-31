@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit ,AfterViewInit} from '@angular/core';
 import {Router} from "@angular/router";
 import {AngularFireAuth} from "@angular/fire/auth";
 
@@ -7,7 +7,7 @@ import {AngularFireAuth} from "@angular/fire/auth";
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss'],
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent implements OnInit,AfterViewInit {
     email     : string;
     password  : string;
   
@@ -15,7 +15,7 @@ export class LoginComponent implements OnInit {
   
     ngOnInit()
     {
-      document.querySelector('ion-tab-bar').style.display = 'none';
+      
       this.afAuth.authState.subscribe(user =>
       {
         if (user)
@@ -47,4 +47,14 @@ export class LoginComponent implements OnInit {
         console.log(data);
       });
     }
+
+ngAfterViewInit(){
+
+  document.querySelector('ion-tab-bar').style.display = 'none';
+}
+
   }
+
+
+
+ 

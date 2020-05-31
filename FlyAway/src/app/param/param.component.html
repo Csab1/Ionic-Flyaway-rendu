@@ -1,27 +1,37 @@
 <ion-content>
-  <div class="header">
+  <div class="space-between">
     <h2>Paramètres</h2>
   </div>
+  <div class="flex">
+    <div class="border-blue">
+      <div class="border-white">
+        <div class="img-box">
+          <img
+            src="https://static1.purepeople.com/articles/6/37/97/36/@/5482778-exclusif-jean-pierre-pernaut-soiree-624x600-2.jpg"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <div class="box">
-    <h2>Jean-Pierre Gilles</h2>
+  <h2>Jean-Pierre Gilles</h2>
+
+  <div class="boutton">
+    <ion-item routerLink="/cartesbancaire">
+      <ion-label>Comptes et cartes bancaires</ion-label>
+    </ion-item>
+    <ion-item routerLink="/#">
+      <ion-label>Préférences de paiement</ion-label>
+    </ion-item>
+    <ion-item routerLink="/notif">
+      <ion-label>Notifications</ion-label>
+    </ion-item>
+    <ion-item routerLink="/#">
+      <ion-label>Infos légales</ion-label>
+    </ion-item>
   </div>
-  <div class="button">
-    <ion-button>
-      Comptes et cartes bancaires
-      <ion-icon slot="end" name="play-outline"></ion-icon>
-    </ion-button>
-    <ion-button>
-      Préférences de paiement
-      <ion-icon slot="end" name="play-outline"></ion-icon>
-    </ion-button>
-    <ion-button>
-      Notifications
-      <ion-icon slot="end" name="play-outline"></ion-icon>
-    </ion-button>
-    <ion-button>
-      Infos légales
-      <ion-icon slot="end" name="play-outline"></ion-icon>
-    </ion-button>
-  </div>
+
+  <ion-item  (click)="logOut()">
+    <ion-label >Déconnexion</ion-label>
+  </ion-item>
 </ion-content>

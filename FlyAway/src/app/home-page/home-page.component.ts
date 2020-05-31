@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import {Router} from "@angular/router";
 import {AngularFireAuth} from "@angular/fire/auth";
 
@@ -7,7 +7,7 @@ import {AngularFireAuth} from "@angular/fire/auth";
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.scss'],
 })
-export class HomePageComponent implements OnInit 
+export class HomePageComponent implements OnInit ,AfterViewInit
 {
 
   
@@ -16,7 +16,7 @@ export class HomePageComponent implements OnInit
 
   ngOnInit()
   {
-    document.querySelector('ion-tab-bar').style.display = 'none';
+    
   }
     login()
     {
@@ -28,5 +28,14 @@ export class HomePageComponent implements OnInit
       {
         this.router.navigateByUrl('register');
       }
+
+
+      ngAfterViewInit(){
+
+        document.querySelector('ion-tab-bar').style.display = 'none';
+      }
+
+
+
   }
 

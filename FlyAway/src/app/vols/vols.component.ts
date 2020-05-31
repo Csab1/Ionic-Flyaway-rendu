@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {AngularFireAuth} from "@angular/fire/auth";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-vols',
@@ -7,8 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VolsComponent implements OnInit {
 
-  constructor() { }
+  constructor(public router: Router, public afAuth: AngularFireAuth) { }
 
   ngOnInit() {}
+
+
+
+
+  billet()
+  {
+      this.router.navigateByUrl('billet');
+   
+  }
+
 
 }

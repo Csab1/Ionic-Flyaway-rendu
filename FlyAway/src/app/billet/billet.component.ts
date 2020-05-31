@@ -2,22 +2,24 @@ import { Component, OnInit } from '@angular/core';
 import {AngularFireAuth} from "@angular/fire/auth";
 import {Router} from "@angular/router";
 
+
 @Component({
-  selector: 'app-destination',
-  templateUrl: './destination.component.html',
-  styleUrls: ['./destination.component.scss'],
+  selector: 'app-billet',
+  templateUrl: './billet.component.html',
+  styleUrls: ['./billet.component.scss'],
 })
-export class DestinationComponent implements OnInit {
+export class BilletComponent implements OnInit {
 
   constructor(public router: Router, public afAuth: AngularFireAuth) { }
 
   ngOnInit() {}
 
 
-
-
   backto()
   {
-    this.router.navigateByUrl('research');
+    this.router.navigateByUrl('vols');
   }
+
+
+
 }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {AngularFireAuth} from "@angular/fire/auth";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-param',
@@ -7,8 +9,34 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ParamComponent implements OnInit {
 
-  constructor() { }
+  constructor(public router: Router, public afAuth: AngularFireAuth) { }
 
-  ngOnInit() {}
+  ngOnInit() {
 
+ 
+    let user = localStorage.getItem('user');
+    console.log(user);
+    if (!user)
+    {
+      this.router.navigateByUrl('login');
+    }
+    
+    
+  }
+  
+  
+  logOut()
+  {
+    this.afAuth.auth.signOut().then((user) => {
+      localStorage.clear();
+      this.router.navigateByUrl('');
+    })
+  }
 }
+
+
+
+
+  
+
+
