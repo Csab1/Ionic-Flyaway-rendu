@@ -3,11 +3,27 @@ ion-content{
     --background:url(image/sky.jpg) no-repeat;
 }
   
+.arrow {
+    margin-left: 20px;
+    font-size: 25px;
+    margin-top: 10px;
+    display: block;
+  
+  }
+  
+  .title {
+    margin-left: 24px;
+    display: block;
+    font-size: 20px;
+  
+  
+  }
+  
   .card1 {
     display: block;
     width: 250px;
     height: 145px;
-   background: none;
+    background-color: whitesmoke;
     border-radius: 10px;
   
   }
