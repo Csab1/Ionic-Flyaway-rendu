@@ -43,6 +43,10 @@ const routes: Routes = [
   {
     path: 'notif',
     loadChildren: () => import('./notif/notif.module').then( m => m.NotifPageModule)
+  },
+  {
+    path: 'addcb',
+    loadChildren: () => import('./addcb/addcb.module').then( m => m.AddcbPageModule)
   }
 
  

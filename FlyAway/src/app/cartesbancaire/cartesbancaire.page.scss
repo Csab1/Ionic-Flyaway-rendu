@@ -1,3 +1,12 @@
 ion-item {
   padding-top: 20px;
 }
+
+.titre {
+  display: flex;
+  justify-content: center;
+}
+
+ion-content {
+  --background: url(image/sky.jpg) no-repeat;
+}
