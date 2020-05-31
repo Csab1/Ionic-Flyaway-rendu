@@ -57,6 +57,12 @@ export class HomeComponent implements OnInit,AfterViewInit {
   {
     this.router.navigateByUrl('account');
   }
+
+  billet()
+  {
+      this.router.navigateByUrl('billet');
+   
+  }
 }
  
 
