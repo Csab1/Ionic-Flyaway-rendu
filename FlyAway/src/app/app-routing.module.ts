@@ -32,7 +32,19 @@ const routes: Routes = [
   {path : 'flynumber' ,component : FlynumberComponent},
   {path : 'destination',component : DestinationComponent},
   {path : 'param' ,component: ParamComponent},
-  {path : 'billet' , component : BilletComponent}
+  {path : 'billet' , component : BilletComponent},  {
+    path: 'cartesbancaire',
+    loadChildren: () => import('./cartesbancaire/cartesbancaire.module').then( m => m.CartesbancairePageModule)
+  },
+  {
+    path: 'ajoutcb',
+    loadChildren: () => import('./ajoutcb/ajoutcb.module').then( m => m.AjoutcbPageModule)
+  },
+  {
+    path: 'notif',
+    loadChildren: () => import('./notif/notif.module').then( m => m.NotifPageModule)
+  }
+
  
   
 
