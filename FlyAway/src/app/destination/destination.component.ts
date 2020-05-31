@@ -13,4 +13,11 @@ export class DestinationComponent implements OnInit {
 
   ngOnInit() {}
 
+
+
+
+  backto()
+  {
+    this.router.navigateByUrl('research');
+  }
 }

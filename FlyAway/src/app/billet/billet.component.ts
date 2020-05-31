@@ -14,4 +14,12 @@ export class BilletComponent implements OnInit {
 
   ngOnInit() {}
 
+
+  backto()
+  {
+    this.router.navigateByUrl('vols');
+  }
+
+
+
 }

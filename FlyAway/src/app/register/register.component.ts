@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit ,AfterViewInit} from '@angular/core';
 import {AngularFireAuth} from "@angular/fire/auth";
 import {Router} from "@angular/router";
 
@@ -7,13 +7,13 @@ import {Router} from "@angular/router";
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.scss'],
 })
-export class RegisterComponent implements OnInit {
+export class RegisterComponent implements OnInit ,AfterViewInit {
     email   : string;
   password  : string;
 
   constructor(public afAuth : AngularFireAuth, public router: Router) { }
 
-  ngOnInit() {document.querySelector('ion-tab-bar').style.display = 'none';}
+  ngOnInit() {}
 
   register()
   {
@@ -28,4 +28,13 @@ export class RegisterComponent implements OnInit {
     {
       this.router.navigateByUrl('login');
     }
+
+
+
+    ngAfterViewInit(){
+
+      document.querySelector('ion-tab-bar').style.display = 'none';
+    }
+    
+
 }
