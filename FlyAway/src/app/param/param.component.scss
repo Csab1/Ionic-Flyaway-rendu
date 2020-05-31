@@ -1,7 +1,7 @@
 .space-between {
   display: flex;
   justify-content: flex-start;
-  padding: 10px 10px 0px 10px;
+  padding-left: 10px;
   color: black;
 }
 
@@ -51,6 +51,7 @@ ion-content {
   display: flex;
   justify-content: center;
   margin-top: -6px;
+  padding-top: 10px;
 }
 
 .boutton {
