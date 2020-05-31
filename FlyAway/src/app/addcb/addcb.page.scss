@@ -1,0 +1,25 @@
+ion-item {
+  --ion-background-color: transparent !important;
+}
+
+ion-content {
+  --background: url(image/sky.jpg) no-repeat;
+}
+
+.first {
+  display: column;
+  margin: 10px 10px 0px 10px;
+}
+
+.second {
+  display: flex;
+  margin: 10px 10px 0px 10px;
+  padding: 30px;
+}
+
+h2 {
+  color: black;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
