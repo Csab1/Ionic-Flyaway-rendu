@@ -1,0 +1,54 @@
+.photo {
+  width: 20%;
+  top : 100px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.text {
+  color: black;
+  font-size: 25px;
+  margin-top: 200px;
+  text-align: center;
+  font-weight: 600;
+}
+
+
+.modify {
+
+  width: 301px;
+  height: 164px;
+  background-color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.info {
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 40px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.plus {
+  color: #01A9FF;
+  float: right;
+  margin-right: 10px;
+  margin-top: 140px ;
+}
+
+
+
+
+ion-content{
+
+  --background:url(image/sky.jpg) no-repeat;
+}
+
+
